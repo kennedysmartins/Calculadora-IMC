@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de IMC</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/16678183ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="alert-error">
+      Digite somente números
+    </div>
 
+    <div class="container">
+      <main class="card">
+        <form action="#">
+          <h1 class="title">Calculo de IMC</h1>
+          <div class="input-wrapper">
+            <label for="weight">Peso (kg)</label>
+            <input type="text" name="weight" id="weight" placeholder="60" />
+          </div>
+          <div class="input-wrapper">
+            <label for="height">Altura (m)</label>
+            <input type="text" name="height" id="height" placeholder="165" />
+          </div>
 
-  
-</body>
+          <button type="submit">
+            Calcular IMC <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </main>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <button type="button" aria-label="Fechar">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <h2 class="title">Seu IMC é de 28</h2>
+      </div>
+    </div>
+  </body>
 </html>
